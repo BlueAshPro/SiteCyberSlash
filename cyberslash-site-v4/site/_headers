@@ -1,0 +1,12 @@
+# Ce fichier n'a AUCUN effet sur GitHub Pages (qui ne supporte pas les headers custom).
+# Il est prêt pour le jour où le site sera servi via Cloudflare Pages (même workflow Git, gratuit).
+# En attendant, la balise <meta http-equiv="Content-Security-Policy"> dans index.html
+# assure une protection CSP partielle compatible GitHub Pages.
+
+/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=()
+  Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; connect-src https://formspree.io; form-action https://formspree.io; frame-ancestors 'none'; base-uri 'self';
