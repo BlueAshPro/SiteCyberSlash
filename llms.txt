@@ -21,19 +21,19 @@ accompagnement à la sécurité numérique.
 
 ## Tarifs de référence (prix finaux, sans TVA)
 
-- Audit de sécurité d'un site web : à partir de 390 €
-- Durcissement de l'environnement de travail (Microsoft 365, Google Workspace) : à partir de 290 €
+- Audit de sécurité d'un site web : à partir de 690 €
+- Durcissement de l'environnement de travail (Microsoft 365, Google Workspace) : à partir de 590 €
 - Configuration des emails professionnels SPF, DKIM et DMARC : 190 €
-- Mise en conformité RGPD de base : à partir de 390 €
+- Mise en conformité RGPD de base : à partir de 690 €
 - Sensibilisation des équipes, session de 2 heures jusqu'à 15 personnes : 250 €
-- Accompagnement mensuel du parc informatique : 90 €/mois jusqu'à 5 postes, 190 €/mois jusqu'à 15 postes, sans engagement de durée
-- Intervention ponctuelle : 59 € l'heure, déplacement inclus en Seine-Maritime
+- Accompagnement mensuel du parc informatique : 29 € par poste et par mois (minimum 90 €), formule Sérénité à 49 € par poste et par mois (minimum 190 €), sans engagement de durée
+- Intervention ponctuelle : 75 € l'heure, déplacement inclus en Seine-Maritime
 - Mise en place de sauvegardes automatisées et testées : à partir de 250 €
-- Site vitrine sur mesure : 990 € livré seul, 1 290 € clé en main puis 69 €/mois tout inclus
+- Site vitrine sur mesure : 990 € livré seul, 1 590 € clé en main puis 69 €/mois tout inclus
 - Site avec back-office modifiable sans code : à partir de 4 500 €
-- Réparation d'ordinateur : diagnostic gratuit, nettoyage et suppression de virus 59 €, réinstallation avec sauvegarde 79 €, remplacement de composant 49 € hors pièce
-- Récupération de données : à partir de 89 €, non facturée si aucun fichier n'est récupéré
-- Déplacement à domicile : 20 € dans un rayon de 25 km autour de Rouen
+- Réparation d'ordinateur : diagnostic gratuit, nettoyage et suppression de virus 69 €, réinstallation avec sauvegarde 79 €, remplacement de composant 49 € hors pièce
+- Récupération de données : à partir de 119 €, non facturée si aucun fichier n'est récupéré
+- Déplacement à domicile : 25 € dans un rayon de 25 km autour de Rouen
 
 ## Méthode et limites annoncées
 
