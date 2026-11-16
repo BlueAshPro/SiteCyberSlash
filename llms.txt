@@ -1,0 +1,71 @@
+# CyberSlash
+
+> Cybersécurité, maintenance informatique, dépannage et création de sites web en
+> Normandie. Entreprise individuelle de Killian Rio, basée près de Rouen.
+> Interventions sur site à Rouen, Caen, Le Havre, Évreux et dans toute la
+> Normandie ; prestations à distance partout en France.
+
+Téléphone : 07 82 98 15 58
+Email : cyberslashsolutions@gmail.com
+SIRET : 10092052900011
+Régime : franchise de TVA, article 293 B du Code général des impôts, donc les
+prix affichés sont les prix finaux.
+
+## Clients servis
+
+Entreprises et établissements : cabinets médicaux et paramédicaux, EHPAD et
+établissements de santé, professions libérales (avocats, notaires,
+experts-comptables), commerces, artisans et TPE.
+Particuliers : réparation d'ordinateur, récupération de données, site personnel,
+accompagnement à la sécurité numérique.
+
+## Tarifs de référence (prix finaux, sans TVA)
+
+- Audit de sécurité d'un site web : à partir de 390 €
+- Durcissement de l'environnement de travail (Microsoft 365, Google Workspace) : à partir de 290 €
+- Configuration des emails professionnels SPF, DKIM et DMARC : 190 €
+- Mise en conformité RGPD de base : à partir de 390 €
+- Sensibilisation des équipes, session de 2 heures jusqu'à 15 personnes : 250 €
+- Accompagnement mensuel du parc informatique : 90 €/mois jusqu'à 5 postes, 190 €/mois jusqu'à 15 postes, sans engagement de durée
+- Intervention ponctuelle : 59 € l'heure, déplacement inclus en Seine-Maritime
+- Mise en place de sauvegardes automatisées et testées : à partir de 250 €
+- Site vitrine sur mesure : 990 € livré seul, 1 290 € clé en main puis 69 €/mois tout inclus
+- Site avec back-office modifiable sans code : à partir de 4 500 €
+- Réparation d'ordinateur : diagnostic gratuit, nettoyage et suppression de virus 59 €, réinstallation avec sauvegarde 79 €, remplacement de composant 49 € hors pièce
+- Récupération de données : à partir de 89 €, non facturée si aucun fichier n'est récupéré
+- Déplacement à domicile : 20 € dans un rayon de 25 km autour de Rouen
+
+## Méthode et limites annoncées
+
+- Les audits commencent par une phase strictement passive : informations publiques, enregistrements DNS, en-têtes HTTP. Aucun test actif, scan de ports ou tentative de connexion sans autorisation écrite, conformément à l'article 323-1 du Code pénal.
+- Le diagnostic et la correction font l'objet de devis distincts, pour éviter d'avoir intérêt à trouver beaucoup de problèmes.
+- Pas de test d'intrusion lourd sur une infrastructure complète, pas d'astreinte garantie 24h/24 : ces besoins sont réorientés vers des structures équipées.
+- Investigation OSINT uniquement sur sources ouvertes, sur mandat écrit, et jamais sur un tiers n'ayant pas donné son accord.
+- Réponse sous 24 heures ouvrées. Devis gratuit et sans engagement.
+
+## Références vérifiables
+
+- 1re place au FoxyHack 2026, compétition organisée par la Base aérienne 105 d'Évreux, jury composé de personnels de l'EAC2P.
+- Mission EHPAD en Normandie : 10 postes migrés, 5 virus éliminés, aucune interruption d'activité. Avis public de l'EHPAD Mishkane sur la fiche Google Business.
+- Plus de 1000 points sur Root Me, membre confirmé de CyberFi.
+- CyberSlash Scanner, outil d'audit de sites web développé en interne, couvrant 16 catégories de contrôle.
+
+## Pages
+
+- [Accueil](https://cyberslash.fr/) : présentation générale, offres, avis clients, contact.
+- [Professionnels](https://cyberslash.fr/pages/professionnels.html) : offre entreprises, déroulé d'une mission, limites annoncées.
+- [Cabinets médicaux et paramédicaux](https://cyberslash.fr/pages/cabinet-medical.html) : données de santé, article 9 du RGPD, comptes nominatifs, traçabilité des accès.
+- [EHPAD et établissements de santé](https://cyberslash.fr/pages/ehpad.html) : remise à niveau d'un parc, équipes en rotation, continuité de service.
+- [Professions libérales](https://cyberslash.fr/pages/profession-liberale.html) : fraude au virement, authentification du domaine email, secret professionnel et cloud.
+- [Commerces, artisans et TPE](https://cyberslash.fr/pages/commerce-artisan.html) : visibilité locale, fiche Google Business, site vitrine, sauvegarde de la comptabilité.
+- [Sécurité et conformité](https://cyberslash.fr/pages/securite-conformite.html) : audit OWASP Top 10, durcissement, conformité RGPD, sensibilisation.
+- [Infrastructure et maintenance](https://cyberslash.fr/pages/infrastructure-maintenance.html) : inventaire, maintenance du parc, sauvegardes 3-2-1 testées.
+- [Présence web](https://cyberslash.fr/pages/presence-web.html) : création de site sur mesure, audit d'un site existant, référencement.
+- [Investigation OSINT](https://cyberslash.fr/pages/osint.html) : cartographie d'exposition numérique, cadre légal et éthique.
+- [Particuliers](https://cyberslash.fr/pages/particuliers.html) : dépannage à domicile, grille tarifaire, pannes courantes.
+- [Réparation d'ordinateur](https://cyberslash.fr/pages/reparation-ordinateur.html) : symptômes et causes réelles, déroulé d'une intervention.
+- [Récupération de données](https://cyberslash.fr/pages/recuperation-donnees.html) : cas récupérables, cas impossibles, premiers réflexes.
+- [Tarifs](https://cyberslash.fr/pages/tarifs.html) : grille complète, pro et particuliers.
+- [Questions fréquentes](https://cyberslash.fr/pages/faq.html) : 20 réponses sur les prix, le RGPD, les sauvegardes, les rançongiciels, SPF, DKIM et DMARC.
+- [À propos](https://cyberslash.fr/pages/qui-suis-je.html) : parcours de Killian Rio, méthode de travail, limites.
+- [Mentions légales](https://cyberslash.fr/pages/mentions-legales.html) : éditeur, hébergeur, données personnelles, cookies.

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sécurité informatique pour avocats et notaires | CyberSlash</title>
+<meta name="description" content="Authentification du domaine email, double authentification et cartographie OSINT de l'exposition publique pour avocats, notaires et experts-comptables.">
+<link rel="canonical" href="https://cyberslash.fr/pages/profession-liberale.html">
+<meta name="author" content="Killian Rio">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; connect-src https://formspree.io; form-action https://formspree.io; frame-ancestors 'none'; base-uri 'self';">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#15171a">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CyberSlash">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://cyberslash.fr/pages/profession-liberale.html">
+<meta property="og:title" content="Sécurité informatique pour avocats et notaires | CyberSlash">
+<meta property="og:description" content="Authentification du domaine email, double authentification et cartographie OSINT de l'exposition publique pour avocats, notaires et experts-comptables.">
+<meta property="og:image" content="https://cyberslash.fr/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sécurité informatique pour avocats et notaires | CyberSlash">
+<meta name="twitter:description" content="Authentification du domaine email, double authentification et cartographie OSINT de l'exposition publique pour avocats, notaires et experts-comptables.">
+<meta name="twitter:image" content="https://cyberslash.fr/assets/og-image.png">
+<noscript><style>
+.reveal{opacity:1 !important; transform:none !important;}
+.hero-content .eyebrow,.hero-content h1,.hero-content p.lead,.hero-content .status-pill,.hero-content .hero-ctas{opacity:1 !important; animation:none !important;}
+.marquee-track{animation:none !important;}
+</style></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Accueil",
+      "item": "https://cyberslash.fr/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Professionnels",
+      "item": "https://cyberslash.fr/pages/professionnels.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Professions libérales",
+      "item": "https://cyberslash.fr/pages/profession-liberale.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Sécurité informatique pour professions libérales",
+  "serviceType": "Sécurité informatique et confidentialité pour professions libérales",
+  "description": "Authentification du domaine email par SPF, DKIM et DMARC contre la fraude au virement, double authentification, chiffrement des échanges confidentiels et cartographie OSINT de l'exposition publique.",
+  "url": "https://cyberslash.fr/pages/profession-liberale.html",
+  "provider": {
+    "@id": "https://cyberslash.fr/#entreprise"
+  },
+  "areaServed": [
+    {
+      "@type": "AdministrativeArea",
+      "name": "Rouen"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Caen"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Le Havre"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Évreux"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Dieppe"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Yvetot"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Elbeuf"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Normandie"
+    }
+  ],
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Avocats, notaires, experts-comptables, consultants, dirigeants"
+  }
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Aller au contenu principal</a>
+<div class="scroll-progress"><div class="scroll-progress-bar" id="scrollBar"></div></div>
+
+<header>
+  <div class="nav">
+    <a class="logo" href="../index.html"><svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V5l8-3z"/><line x1="7" y1="16" x2="16" y2="7"/></svg>CyberSlash</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">&#9776;</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="../pages/professionnels.html">Pro</a>
+      <a href="../pages/particuliers.html">Particuliers</a>
+      <a href="../pages/tarifs.html">Tarifs</a>
+      <a href="../pages/faq.html">FAQ</a>
+      <a href="../pages/qui-suis-je.html">À propos</a>
+      <a href="tel:+33782981558" class="nav-phone">07 82 98 15 58</a>
+      <a href="../index.html#contact" class="btn btn-primary nav-cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap reveal">
+<nav class="crumbs" aria-label="Fil d'Ariane"><ol>
+  <li><a href="../index.html">Accueil</a></li>
+  <li><a href="../pages/professionnels.html">Professionnels</a></li>
+  <li><span aria-current="page">Professions libérales</span></li>
+</ol></nav>
+      <p class="eyebrow">Professions libérales</p>
+      <h1>Sécurité informatique pour avocats, notaires et professions libérales en Normandie</h1>
+      <p class="lead">Avocats, notaires, experts-comptables, consultants : protéger des dossiers confidentiels et une réputation qui constitue l'essentiel de votre valeur.</p>
+      <div class="hero-ctas">
+        <a href="../index.html#contact" class="btn btn-primary">Demander un devis</a>
+        <a href="tel:+33782981558" class="btn btn-ghost">07 82 98 15 58</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad">
+    <div class="wrap prose reveal">
+      <h2>Votre risque principal n'est pas technique</h2>
+      <p>Un cabinet d'avocats ou un expert-comptable manipule des informations dont la divulgation cause un dommage immédiat : stratégie contentieuse, situation financière d'un client, dossier de divorce, opération de cession. Le risque principal n'est pas qu'un pirate perce un pare-feu, c'est qu'une personne obtienne par la ruse ce qu'elle n'aurait pas pu prendre par la force.</p>
+      <p>Deux scénarios très concrets :</p>
+      <ul>
+        <li><strong>La fraude au virement.</strong> Un email qui semble venir de votre associé ou de votre client demande un changement de coordonnées bancaires avant un versement. Sans DMARC sur votre domaine, ce message est trivial à fabriquer.</li>
+        <li><strong>L'ingénierie sociale documentée.</strong> Une personne rassemble ce qui est public sur vous, vos dossiers médiatisés, vos collaborateurs, vos déplacements, puis construit un prétexte crédible. C'est exactement ce qu'une investigation OSINT permet d'anticiper.</li>
+      </ul>
+
+      <h2>Ce que je mets en place</h2>
+      <h3>L'authentification de votre domaine email</h3>
+      <p>SPF, DKIM et DMARC configurés et vérifiés, avec les rapports activés. Résultat : personne ne peut envoyer un email qui semble venir de votre cabinet, et vos propres messages cessent de partir en spam chez vos correspondants.</p>
+      <h3>Le chiffrement des échanges sensibles</h3>
+      <p>Une méthode simple pour transmettre une pièce confidentielle à un client ou à un confrère, qui ne repose pas sur une pièce jointe en clair et que vos interlocuteurs sauront utiliser sans formation.</p>
+      <h3>La double authentification partout</h3>
+      <p>Sur votre messagerie, votre espace de stockage et vos outils métier. C'est la mesure unique qui bloque le plus d'attaques, et sa mise en place prend une demi-journée pour un cabinet entier.</p>
+      <h3>Une cartographie de votre exposition publique</h3>
+      <p>Une investigation OSINT recense ce qui est déjà accessible sur vous et votre structure : mentions, documents indexés, profils, anciennes fuites de données. Vous recevez un rapport avec des actions concrètes de réduction d'exposition. Seules des sources ouvertes et légales sont utilisées.</p>
+      <h3>Le secret professionnel face au cloud</h3>
+      <p>Si vous êtes soumis au secret professionnel, l'hébergement de vos dossiers mérite une vraie question : où sont les données, sous quelle juridiction, qui peut techniquement y accéder. Je vous expose les options, y compris des alternatives souveraines, avec leurs contraintes réelles plutôt qu'un discours commercial.</p>
+
+      <h2>Un site qui inspire confiance</h2>
+      <p>Pour une profession libérale, le site n'est pas un canal de vente, c'est une preuve de sérieux consultée avant un premier rendez-vous. Un site lent, non sécurisé ou visiblement daté produit l'effet inverse de celui recherché. Un site sobre, rapide et à jour fait le travail.</p>
+    </div>
+  </section>
+
+  <section class="section-light section-pad">
+    <div class="wrap prose">
+      <dl class="facts reveal">
+        <div class="fact"><dt>Risque dominant</dt><dd>ingénierie sociale et fraude au virement, pas l'intrusion technique</dd></div>
+        <div class="fact"><dt>Mesure la plus efficace</dt><dd>double authentification sur la messagerie et le stockage</dd></div>
+        <div class="fact"><dt>Configuration SPF, DKIM et DMARC</dt><dd>190 €</dd></div>
+        <div class="fact"><dt>Durcissement de l'environnement de travail</dt><dd>à partir de 290 €</dd></div>
+        <div class="fact"><dt>Investigation OSINT</dt><dd>sur devis, échange confidentiel au préalable</dd></div>
+        <div class="fact"><dt>Confidentialité</dt><dd>aucune information de dossier n'est consultée ni conservée</dd></div>
+      </dl>
+      <div class="qa-block reveal">
+        <h2>Questions fréquentes</h2>
+        <details class="qa"><summary>Avez-vous une obligation de confidentialité sur ce que vous voyez ?</summary><div class="qa-body"><p>Oui, et elle est écrite dans le devis. Je n'ouvre aucun document de dossier sauf nécessité technique explicite et accord préalable, rien n'est copié, et rien n'est conservé après l'intervention.</p></div></details>
+        <details class="qa"><summary>L'investigation OSINT est-elle légale ?</summary><div class="qa-body"><p>Oui, dès lors qu'elle se limite à des sources ouvertes et légalement accessibles, ce qui est le cadre que je m'impose. Aucune méthode intrusive, aucun accès non autorisé, aucune collecte auprès de tiers par la ruse.</p></div></details>
+        <details class="qa"><summary>Le cloud est-il compatible avec le secret professionnel ?</summary><div class="qa-body"><p>Il peut l'être, à condition de choisir l'hébergement en connaissance de cause : localisation des données, juridiction applicable, conditions d'accès par le prestataire, et contrat de sous-traitance conforme à l'article 28 du RGPD. C'est un arbitrage, pas un interdit.</p></div></details>
+        <p class="muted" style="margin-top:1rem;"><a class="more-link" href="../pages/faq.html">Voir toutes les questions fréquentes</a></p>
+      </div>
+      <div class="related reveal">
+        <h2 class="related-head">À voir aussi</h2>
+        <div class="related-grid">
+        <a class="related-card" href="../pages/osint.html"><span class="related-title">Investigation OSINT</span><span class="related-desc">Le détail de la méthode et du cadre éthique.</span></a>
+        <a class="related-card" href="../pages/securite-conformite.html"><span class="related-title">Sécurité et conformité</span><span class="related-desc">Audit, durcissement, sensibilisation.</span></a>
+        <a class="related-card" href="../pages/presence-web.html"><span class="related-title">Présence web</span><span class="related-desc">Création et mise à niveau de site.</span></a>
+        </div>
+      </div>
+      <div class="cta-banner">
+        <h2>Une exposition à évaluer ?</h2>
+        <p>Premier échange confidentiel, sans engagement. Dites-moi votre activité et ce qui vous inquiète le plus aujourd'hui.</p>
+        <div class="cta-banner-actions">
+          <a href="../index.html#contact" class="btn btn-primary">Demander un devis</a>
+          <a href="tel:+33782981558" class="btn btn-ghost">07 82 98 15 58</a>
+        </div>
+        <p class="cta-note">Réponse sous 24 heures. Devis gratuit et sans engagement.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-cols">
+    <div class="footer-col">
+      <span class="footer-brand"><svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V5l8-3z"/><line x1="7" y1="16" x2="16" y2="7"/></svg>CyberSlash</span>
+      <p class="footer-desc">Cybersécurité, maintenance informatique et création de sites web en Normandie. Entreprise individuelle Killian Rio.</p>
+      <a class="footer-tel" href="tel:+33782981558">07 82 98 15 58</a>
+    </div>
+    <div class="footer-col">
+      <span class="footer-head">Professionnels</span>
+      <a href="../pages/cabinet-medical.html">Cabinets médicaux et paramédicaux</a>
+      <a href="../pages/ehpad.html">EHPAD et établissements de santé</a>
+      <a href="../pages/profession-liberale.html">Professions libérales</a>
+      <a href="../pages/commerce-artisan.html">Commerces, artisans et TPE</a>
+    </div>
+    <div class="footer-col">
+      <span class="footer-head">Particuliers</span>
+      <a href="../pages/reparation-ordinateur.html">Réparation d'ordinateur</a>
+      <a href="../pages/recuperation-donnees.html">Récupération de données</a>
+      <a href="../pages/presence-web.html">Création de site personnel</a>
+    </div>
+    <div class="footer-col">
+      <span class="footer-head">CyberSlash</span>
+      <a href="../pages/tarifs.html">Tarifs</a>
+      <a href="../pages/faq.html">Questions fréquentes</a>
+      <a href="../pages/qui-suis-je.html">À propos</a>
+      <a href="../pages/mentions-legales.html">Mentions légales</a>
+    </div>
+  </div>
+  <div class="wrap footer-row">
+    <span>&copy; 2026 CyberSlash, Killian Rio EI &middot; SIRET 10092052900011</span>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/killian-rio-65b879388/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://g.page/r/CUMfcwvSYK27EBM" target="_blank" rel="noopener">Google Business</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/main.js"></script>
+</body>
+</html>

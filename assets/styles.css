@@ -275,3 +275,153 @@ footer{border-top:1px solid var(--anthracite-600); padding:2.5rem 0; font-size:.
 @media (max-width:380px){
 }
 body{overflow-x:hidden;}
+
+/* ==========================================================================
+   Ajouts : navigation telephone, fil d'Ariane, segments metier, encarts de
+   faits, questions/reponses, pages liees, tableaux de tarifs, pied enrichi.
+   ========================================================================== */
+
+/* Lisibilite du contenu long sur fond clair */
+.section-light .prose p,
+.section-light .prose li{color:var(--ink-dark-muted);}
+.section-light .prose li::before{background:var(--brass-deep);}
+.section-light .prose h2,
+.section-light .prose h3{color:var(--ink-dark);}
+.section-light .more-link{color:var(--brass-deep);}
+.prose h3{font-size:1.1rem; margin:1.6rem 0 .6rem; font-family:var(--font-display); font-weight:600;}
+.prose h3:first-child{margin-top:0;}
+.prose strong{color:var(--ink);}
+.section-light .prose strong{color:var(--ink-dark);}
+
+/* Telephone dans la navigation */
+.nav-phone{font-family:var(--font-mono); font-size:.9rem; color:var(--brass-light) !important; letter-spacing:.02em; white-space:nowrap;}
+.nav-phone:hover{color:var(--ink) !important;}
+
+.hero-note{margin-top:1.1rem; font-size:.85rem; color:var(--ink-muted);}
+
+/* Fil d'Ariane */
+.crumbs{margin-bottom:1.2rem; font-size:.82rem;}
+.crumbs ol{display:flex; flex-wrap:wrap; align-items:center; gap:.45rem; list-style:none; padding:0; margin:0;}
+.crumbs li{display:flex; align-items:center; gap:.45rem; color:var(--ink-muted);}
+.crumbs li + li::before{content:'/'; color:var(--anthracite-500);}
+.crumbs a{color:var(--ink-muted); text-decoration:none;}
+.crumbs a:hover{color:var(--brass-light);}
+.crumbs [aria-current]{color:var(--ink);}
+.section-light .crumbs li{color:var(--ink-dark-muted);}
+.section-light .crumbs a{color:var(--ink-dark-muted);}
+
+/* Cartes de segment (metiers, problemes) */
+.segment-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:1.2rem;}
+@media (max-width:780px){.segment-grid{grid-template-columns:1fr;}}
+.segment-card{display:flex; flex-direction:column; gap:.55rem; padding:1.6rem; border:1px solid var(--anthracite-500); border-radius:var(--radius); background:var(--anthracite-700); transition:border-color .25s, transform .25s;}
+.segment-card:hover{border-color:var(--brass);}
+.segment-card h3{font-family:var(--font-display); font-size:1.12rem; font-weight:600; color:var(--ink);}
+.segment-card p{font-size:.92rem; color:var(--ink-muted); margin:0;}
+.segment-card .more-link{margin-top:auto; padding-top:.5rem; font-size:.85rem;}
+.section-light .segment-card{background:#f4f1e9; border-color:var(--parchment-deep);}
+.section-light .segment-card h3{color:var(--ink-dark);}
+.section-light .segment-card p{color:var(--ink-dark-muted);}
+.section-light .segment-card:hover{border-color:var(--brass-deep);}
+
+/* Encart de faits bruts */
+.facts{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0; border:1px solid var(--anthracite-500); border-radius:var(--radius); overflow:hidden; margin:0 0 2.4rem; background:var(--anthracite-700);}
+@media (max-width:680px){.facts{grid-template-columns:1fr;}}
+.fact{padding:1.1rem 1.3rem; border-bottom:1px solid var(--anthracite-600); border-right:1px solid var(--anthracite-600);}
+.fact dt{font-family:var(--font-mono); font-size:.72rem; text-transform:uppercase; letter-spacing:.09em; color:var(--brass); margin-bottom:.35rem;}
+.fact dd{margin:0; font-size:.95rem; color:var(--ink);}
+.section-light .facts{background:#f4f1e9; border-color:var(--parchment-deep);}
+.section-light .fact{border-color:var(--parchment-deep);}
+.section-light .fact dt{color:var(--brass-deep);}
+.section-light .fact dd{color:var(--ink-dark);}
+
+/* Questions / reponses */
+.qa-block{margin-bottom:2.4rem;}
+.qa-block h2{margin-bottom:1rem;}
+.qa{border-bottom:1px solid var(--anthracite-500);}
+.qa summary{cursor:pointer; padding:1rem 2rem 1rem 0; font-family:var(--font-display); font-size:1rem; font-weight:600; color:var(--ink); position:relative; list-style:none;}
+.qa summary::-webkit-details-marker{display:none;}
+.qa summary::after{content:'+'; position:absolute; right:.3rem; top:50%; transform:translateY(-50%); font-family:var(--font-mono); font-size:1.15rem; color:var(--brass); transition:transform .25s;}
+.qa[open] summary::after{content:'\2212';}
+.qa summary:hover{color:var(--brass-light);}
+.qa-body{padding:0 0 1.2rem;}
+.qa-body p{margin:0; color:var(--ink-muted); max-width:720px;}
+.section-light .qa{border-color:var(--parchment-deep);}
+.section-light .qa summary{color:var(--ink-dark);}
+.section-light .qa summary:hover{color:var(--brass-deep);}
+.section-light .qa summary::after{color:var(--brass-deep);}
+.section-light .qa-body p{color:var(--ink-dark-muted);}
+
+/* Pages liees */
+.related{margin:0 0 2.4rem;}
+.related-head{font-size:1.2rem; margin-bottom:1rem;}
+.related-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1rem;}
+@media (max-width:780px){.related-grid{grid-template-columns:1fr;}}
+.related-card{display:flex; flex-direction:column; gap:.35rem; padding:1.1rem 1.2rem; border:1px solid var(--anthracite-500); border-radius:var(--radius); background:var(--anthracite-700); transition:border-color .25s;}
+.related-card:hover{border-color:var(--brass);}
+.related-title{font-family:var(--font-display); font-weight:600; font-size:.98rem; color:var(--ink);}
+.related-desc{font-size:.85rem; color:var(--ink-muted);}
+.section-light .related-card{background:#f4f1e9; border-color:var(--parchment-deep);}
+.section-light .related-card:hover{border-color:var(--brass-deep);}
+.section-light .related-title{color:var(--ink-dark);}
+.section-light .related-desc{color:var(--ink-dark-muted);}
+
+/* Etapes numerotees */
+.steps{counter-reset:step; display:grid; gap:.9rem; margin:0 0 1.5rem; max-width:720px; list-style:none; padding:0;}
+.steps li{counter-increment:step; position:relative; padding-left:2.5rem; color:var(--ink-muted);}
+.steps li::before{content:counter(step); position:absolute; left:0; top:-.1rem; width:1.7rem; height:1.7rem; display:grid; place-items:center; border:1px solid var(--brass); border-radius:50%; font-family:var(--font-mono); font-size:.8rem; color:var(--brass); background:transparent;}
+.section-light .steps li{color:var(--ink-dark-muted);}
+.section-light .steps li::before{border-color:var(--brass-deep); color:var(--brass-deep);}
+
+/* Tableaux de tarifs */
+.rate-table{margin:1.2rem 0 2rem; border:1px solid var(--anthracite-500); border-radius:var(--radius); overflow-x:auto;}
+.rate-table table{width:100%; border-collapse:collapse; font-size:.92rem; min-width:420px;}
+.rate-table caption{text-align:left; padding:.9rem 1.1rem 0; font-size:.8rem; color:var(--ink-muted); caption-side:top;}
+.rate-table th{text-align:left; padding:.85rem 1.1rem; font-family:var(--font-mono); font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; color:var(--brass); border-bottom:1px solid var(--anthracite-500); font-weight:500;}
+.rate-table td{padding:.85rem 1.1rem; border-bottom:1px solid var(--anthracite-600); color:var(--ink-muted); vertical-align:top;}
+.rate-table td:nth-child(2){color:var(--ink); font-family:var(--font-mono); white-space:nowrap;}
+.rate-table tbody tr:last-child td{border-bottom:none;}
+.section-light .rate-table{border-color:var(--parchment-deep);}
+.section-light .rate-table caption{color:var(--ink-dark-muted);}
+.section-light .rate-table th{color:var(--brass-deep); border-color:var(--parchment-deep);}
+.section-light .rate-table td{color:var(--ink-dark-muted); border-color:var(--parchment-deep);}
+.section-light .rate-table td:nth-child(2){color:var(--ink-dark);}
+
+/* Appel a l'action */
+.cta-banner h2{font-size:1.4rem; margin-bottom:.6rem;}
+.cta-banner-actions{display:flex; gap:.8rem; justify-content:center; flex-wrap:wrap;}
+.cta-note{margin:1.1rem 0 0 !important; font-size:.82rem; color:var(--ink-muted);}
+.section-light .cta-banner{background:#f4f1e9; border-color:var(--parchment-deep);}
+.section-light .cta-banner h2,.section-light .cta-banner h3{color:var(--ink-dark);}
+.section-light .cta-banner p{color:var(--ink-dark-muted);}
+
+/* Contact : appel direct mis en avant */
+.contact-primary{align-items:center; gap:.8rem !important;}
+.contact-primary span{display:flex; flex-direction:column; line-height:1.3;}
+.contact-primary strong{font-family:var(--font-mono); font-size:1.05rem; color:var(--brass-deep);}
+.contact-primary em{font-style:normal; font-size:.8rem; color:var(--ink-dark-muted);}
+.contact-area{font-size:.82rem; color:var(--ink-dark-muted); margin-top:.6rem;}
+.contact-form .opt{color:var(--ink-dark-muted); font-weight:400; font-size:.85em;}
+
+/* Pied de page enrichi */
+.footer-cols{display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:2rem; padding-bottom:2.2rem; margin-bottom:1.8rem; border-bottom:1px solid var(--anthracite-600);}
+@media (max-width:860px){.footer-cols{grid-template-columns:1fr 1fr;}}
+@media (max-width:520px){.footer-cols{grid-template-columns:1fr;}}
+.footer-col{display:flex; flex-direction:column; gap:.5rem;}
+.footer-col a{color:var(--ink-muted); font-size:.85rem;}
+.footer-col a:hover{color:var(--brass-light);}
+.footer-brand{display:flex; align-items:center; gap:.5rem; font-family:var(--font-display); font-weight:700; font-size:1.05rem; color:var(--ink);}
+.footer-desc{font-size:.84rem; color:var(--ink-muted); max-width:34ch; line-height:1.55;}
+.footer-tel{font-family:var(--font-mono); color:var(--brass-light) !important; font-size:.95rem !important;}
+.footer-head{font-family:var(--font-mono); font-size:.7rem; text-transform:uppercase; letter-spacing:.1em; color:var(--brass); margin-bottom:.2rem;}
+
+/* Navigation : 7 entrees, on resserre avant le passage en menu mobile */
+@media (max-width:1040px) and (min-width:781px){
+  .nav-links{gap:1rem; font-size:.85rem;}
+  .nav-links .btn{padding:.7rem 1.1rem; font-size:.85rem;}
+  .nav-phone{font-size:.85rem;}
+}
+
+/* Correctif de contraste : .nav-links a l'emportait sur .btn-primary,
+   le libelle du bouton Contact passait en gris sur fond laiton. */
+.nav-links a.btn-primary{color:var(--anthracite-900);}
+.nav-links a.btn-primary:hover{color:var(--anthracite-900);}

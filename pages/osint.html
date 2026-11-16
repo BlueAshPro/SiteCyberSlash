@@ -3,79 +3,251 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Investigation OSINT - CyberSlash</title>
-<meta name="description" content="Cartographie de l'empreinte numérique et investigation en sources ouvertes, dans un cadre éthique strict.">
+<title>Investigation OSINT et exposition numérique | CyberSlash</title>
+<meta name="description" content="Cartographie de l'empreinte numérique publique pour avocats, dirigeants et professions libérales. Sources ouvertes uniquement, sur mandat écrit.">
+<link rel="canonical" href="https://cyberslash.fr/pages/osint.html">
+<meta name="author" content="Killian Rio">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/styles.css">
 <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
-<link rel="canonical" href="https://cyberslash.fr/pages/osint.html">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; connect-src https://formspree.io; form-action https://formspree.io; frame-ancestors 'none'; base-uri 'self';">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#15171a">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="CyberSlash">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:url" content="https://cyberslash.fr/pages/osint.html">
-<meta property="og:title" content="Investigation OSINT — CyberSlash">
-<meta property="og:description" content="Cartographie de l'empreinte numérique et investigation en sources ouvertes, dans un cadre éthique strict.">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Investigation OSINT — CyberSlash">
-<meta name="twitter:description" content="Cartographie de l'empreinte numérique et investigation en sources ouvertes, dans un cadre éthique strict.">
+<meta property="og:title" content="Investigation OSINT et exposition numérique | CyberSlash">
+<meta property="og:description" content="Cartographie de l'empreinte numérique publique pour avocats, dirigeants et professions libérales. Sources ouvertes uniquement, sur mandat écrit.">
+<meta property="og:image" content="https://cyberslash.fr/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Investigation OSINT et exposition numérique | CyberSlash">
+<meta name="twitter:description" content="Cartographie de l'empreinte numérique publique pour avocats, dirigeants et professions libérales. Sources ouvertes uniquement, sur mandat écrit.">
+<meta name="twitter:image" content="https://cyberslash.fr/assets/og-image.png">
+<noscript><style>
+.reveal{opacity:1 !important; transform:none !important;}
+.hero-content .eyebrow,.hero-content h1,.hero-content p.lead,.hero-content .status-pill,.hero-content .hero-ctas{opacity:1 !important; animation:none !important;}
+.marquee-track{animation:none !important;}
+</style></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Accueil",
+      "item": "https://cyberslash.fr/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Professionnels",
+      "item": "https://cyberslash.fr/pages/professionnels.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Investigation OSINT",
+      "item": "https://cyberslash.fr/pages/osint.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Investigation OSINT et cartographie d'exposition numérique",
+  "serviceType": "Investigation en sources ouvertes",
+  "description": "Recueil et analyse d'informations publiquement accessibles pour cartographier l'exposition numérique d'une personne ou d'une structure, identifier les vecteurs d'ingénierie sociale exploitables et réduire cette exposition. Sources ouvertes uniquement, sur mandat écrit.",
+  "url": "https://cyberslash.fr/pages/osint.html",
+  "provider": {
+    "@id": "https://cyberslash.fr/#entreprise"
+  },
+  "areaServed": [
+    {
+      "@type": "AdministrativeArea",
+      "name": "Rouen"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Caen"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Le Havre"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Évreux"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Dieppe"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Yvetot"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Elbeuf"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Normandie"
+    }
+  ]
+}
+</script>
 </head>
 <body>
+
 <a class="skip-link" href="#main">Aller au contenu principal</a>
 <div class="scroll-progress"><div class="scroll-progress-bar" id="scrollBar"></div></div>
+
 <header>
   <div class="nav">
-    <a class="logo" href="../index.html#pro"><svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V5l8-3z"/><line x1="7" y1="16" x2="16" y2="7"/></svg>CyberSlash</a>
+    <a class="logo" href="../index.html"><svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V5l8-3z"/><line x1="7" y1="16" x2="16" y2="7"/></svg>CyberSlash</a>
     <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">&#9776;</button>
     <nav class="nav-links" id="navLinks">
-      <a href="../index.html#pro">Pro</a>
-      <a href="particuliers.html">Particuliers</a>
-      <a href="qui-suis-je.html">À propos</a>
+      <a href="../pages/professionnels.html">Pro</a>
+      <a href="../pages/particuliers.html">Particuliers</a>
+      <a href="../pages/tarifs.html">Tarifs</a>
+      <a href="../pages/faq.html">FAQ</a>
+      <a href="../pages/qui-suis-je.html">À propos</a>
+      <a href="tel:+33782981558" class="nav-phone">07 82 98 15 58</a>
       <a href="../index.html#contact" class="btn btn-primary nav-cta">Contact</a>
     </nav>
   </div>
 </header>
+
 <main id="main">
   <section class="page-hero">
     <div class="wrap reveal">
-      <a class="breadcrumb" href="../index.html#pro">&larr; Retour à l'accueil</a>
+<nav class="crumbs" aria-label="Fil d'Ariane"><ol>
+  <li><a href="../index.html">Accueil</a></li>
+  <li><a href="../pages/professionnels.html">Professionnels</a></li>
+  <li><span aria-current="page">Investigation OSINT</span></li>
+</ol></nav>
       <p class="eyebrow">Spécialité</p>
-      <h1>Investigation OSINT</h1>
-      <p class="lead">Cartographier ce qui est déjà visible sur vous ou votre structure, avant qu'une personne malintentionnée ne le fasse à votre place.</p>
+      <h1>Investigation OSINT et cartographie d'exposition numérique</h1>
+      <p class="lead">Savoir ce qui est déjà visible sur vous ou votre structure, avant qu'une personne malintentionnée ne le découvre à votre place.</p>
+      <div class="hero-ctas">
+        <a href="../index.html#contact" class="btn btn-primary">Demander un devis</a>
+        <a href="tel:+33782981558" class="btn btn-ghost">07 82 98 15 58</a>
+      </div>
     </div>
   </section>
 
   <section class="section-pad">
     <div class="wrap prose reveal">
-      <h2>À qui s'adresse cette prestation</h2>
-      <p>Avocats, dirigeants, professions libérales exposées à un risque réputationnel ou à des tentatives d'ingénierie sociale ciblées. L'objectif : connaître votre exposition réelle avant qu'elle ne soit exploitée.</p>
+      <h2>Ce qu'est réellement l'OSINT</h2>
+      <p>OSINT signifie open source intelligence : le recueil et l'analyse d'informations déjà publiquement accessibles. Aucune intrusion, aucun accès non autorisé, aucune collecte auprès de tiers par la ruse. Tout ce qui est utilisé est consultable par n'importe qui, ce qui est précisément le problème : la plupart des attaques ciblées commencent par cette étape, et la personne visée n'a aucune idée de ce qui est accessible sur elle.</p>
+
+      <h2>À qui cela sert</h2>
+      <p>Avocats, notaires, dirigeants, élus, professions libérales exposées à un risque réputationnel ou à des tentatives d'ingénierie sociale ciblées. Également les structures qui recrutent à des postes sensibles, ou qui s'apprêtent à communiquer publiquement sur une opération.</p>
 
       <h2>Ce que couvre l'investigation</h2>
       <ul>
-        <li>Cartographie de l'empreinte numérique publique (réseaux sociaux, mentions, documents indexés)</li>
-        <li>Analyse des vecteurs d'ingénierie sociale exploitables à partir de ces informations</li>
-        <li>Rapport structuré, avec recommandations concrètes de réduction d'exposition</li>
+        <li><strong>Empreinte numérique publique.</strong> Mentions dans la presse et sur le web, profils sur les réseaux sociaux y compris ceux oubliés, documents indexés par les moteurs, dont des fichiers internes rendus accessibles par erreur.</li>
+        <li><strong>Exposition technique de la structure.</strong> Noms de domaine, sous-domaines oubliés, adresses email publiées, services visibles depuis l'extérieur, tout cela à partir d'informations publiques uniquement.</li>
+        <li><strong>Présence dans des fuites de données connues.</strong> Vérification de l'apparition de vos adresses professionnelles dans des compromissions déjà publiques, ce qui indique quels mots de passe doivent être changés en priorité.</li>
+        <li><strong>Vecteurs d'ingénierie sociale exploitables.</strong> La partie la plus utile : à partir des éléments trouvés, je reconstitue les prétextes crédibles qu'un attaquant pourrait employer contre vous, vos collaborateurs ou votre secrétariat.</li>
+        <li><strong>Rapport et réduction d'exposition.</strong> Pour chaque élément, ce qui peut être supprimé, ce qui peut être réduit, et ce qui doit simplement être connu parce qu'il ne peut pas disparaître.</li>
       </ul>
 
-      <h2>Un cadre éthique strict</h2>
-      <p>Seules des sources ouvertes et légalement accessibles sont utilisées. Aucune méthode intrusive, aucun accès non autorisé. La confidentialité de la démarche et des résultats est garantie.</p>
-      <p class="muted" style="font-size:.88rem;">Cette méthodologie a été éprouvée lors d'une compétition nationale, sur un cas réel encadré et anonymisé, pour le compte d'un avocat.</p>
+      <h2>Le cadre éthique et légal</h2>
+      <p>Trois règles, non négociables. Je n'utilise que des sources ouvertes et légalement accessibles. Je n'investigue que sur vous ou sur une structure dont vous avez la responsabilité, sur mandat écrit, et jamais sur un tiers pour votre compte. Le rapport vous est remis à vous seul, et mes copies de travail sont détruites après remise.</p>
+      <p>Ce que je refuse, pour être explicite : l'investigation sur un conjoint, un concurrent, un salarié ou toute personne qui n'a pas donné son accord. Ce n'est ni légal ni le métier.</p>
 
+      <h2>Expérience</h2>
+      <p>Cette méthodologie a été éprouvée lors d'une compétition nationale, sur un cas réel encadré et anonymisé, pour le compte d'un avocat. Ma formation initiale en droit, deux années de licence avant la cybersécurité, sert directement ici : le cadre légal de la collecte d'informations n'est pas une annexe de la prestation, c'en est la condition.</p>
+    </div>
+  </section>
+
+  <section class="section-light section-pad">
+    <div class="wrap prose">
+      <dl class="facts reveal">
+        <div class="fact"><dt>Nature de la prestation</dt><dd>sources ouvertes et légalement accessibles uniquement</dd></div>
+        <div class="fact"><dt>Périmètre autorisé</dt><dd>vous ou une structure sous votre responsabilité, sur mandat écrit</dd></div>
+        <div class="fact"><dt>Refusé</dt><dd>investigation sur un tiers n'ayant pas donné son accord</dd></div>
+        <div class="fact"><dt>Livrable</dt><dd>rapport d'exposition et plan de réduction, remis à vous seul</dd></div>
+        <div class="fact"><dt>Tarif</dt><dd>sur devis, après un premier échange confidentiel</dd></div>
+        <div class="fact"><dt>Confidentialité</dt><dd>copies de travail détruites après remise du rapport</dd></div>
+      </dl>
+      <div class="qa-block reveal">
+        <h2>Questions fréquentes</h2>
+        <details class="qa"><summary>En quoi est-ce différent d'une simple recherche Google ?</summary><div class="qa-body"><p>La recherche n'est que la première étape. La valeur est dans le croisement : relier un profil ancien à une adresse email, celle-ci à une fuite de données, et en déduire le prétexte crédible qu'un attaquant construirait. C'est ce travail d'assemblage qui révèle une exposition qu'aucune recherche simple ne montre.</p></div></details>
+        <details class="qa"><summary>Peut-on faire disparaître ce qui a été trouvé ?</summary><div class="qa-body"><p>En partie. Certaines informations peuvent être supprimées, notamment par un droit à l'effacement auprès d'un site ou d'un moteur. D'autres sont dans des archives ou des bases qui ne disparaîtront pas. Le rapport distingue clairement les deux, parce que savoir ce qui reste visible permet au moins de s'y préparer.</p></div></details>
+        <details class="qa"><summary>Pouvez-vous investiguer sur quelqu'un d'autre pour moi ?</summary><div class="qa-body"><p>Non. Je n'investigue que sur vous ou sur une structure dont vous avez la responsabilité, sur mandat écrit. Une demande portant sur un tiers sans son accord est refusée, quelle qu'en soit la raison avancée.</p></div></details>
+        <p class="muted" style="margin-top:1rem;"><a class="more-link" href="../pages/faq.html">Voir toutes les questions fréquentes</a></p>
+      </div>
+      <div class="related reveal">
+        <h2 class="related-head">À voir aussi</h2>
+        <div class="related-grid">
+        <a class="related-card" href="../pages/profession-liberale.html"><span class="related-title">Professions libérales</span><span class="related-desc">Avocats, notaires, experts-comptables.</span></a>
+        <a class="related-card" href="../pages/securite-conformite.html"><span class="related-title">Sécurité et conformité</span><span class="related-desc">Durcissement et sensibilisation.</span></a>
+        <a class="related-card" href="../pages/qui-suis-je.html"><span class="related-title">À propos</span><span class="related-desc">Mon parcours et mon cadre de travail.</span></a>
+        </div>
+      </div>
       <div class="cta-banner">
-        <h3>Une exposition à évaluer ?</h3>
-        <p>Échange confidentiel, sans engagement.</p>
-        <a href="../index.html#contact" class="btn btn-primary">Demander un échange</a>
+        <h2>Une exposition à évaluer ?</h2>
+        <p>Premier échange confidentiel et sans engagement. Dites-moi votre fonction et ce qui motive la démarche.</p>
+        <div class="cta-banner-actions">
+          <a href="../index.html#contact" class="btn btn-primary">Demander un échange confidentiel</a>
+          <a href="tel:+33782981558" class="btn btn-ghost">07 82 98 15 58</a>
+        </div>
+        <p class="cta-note">Réponse sous 24 heures. Devis gratuit et sans engagement.</p>
       </div>
     </div>
   </section>
 </main>
+
 <footer>
+  <div class="wrap footer-cols">
+    <div class="footer-col">
+      <span class="footer-brand"><svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V5l8-3z"/><line x1="7" y1="16" x2="16" y2="7"/></svg>CyberSlash</span>
+      <p class="footer-desc">Cybersécurité, maintenance informatique et création de sites web en Normandie. Entreprise individuelle Killian Rio.</p>
+      <a class="footer-tel" href="tel:+33782981558">07 82 98 15 58</a>
+    </div>
+    <div class="footer-col">
+      <span class="footer-head">Professionnels</span>
+      <a href="../pages/cabinet-medical.html">Cabinets médicaux et paramédicaux</a>
+      <a href="../pages/ehpad.html">EHPAD et établissements de santé</a>
+      <a href="../pages/profession-liberale.html">Professions libérales</a>
+      <a href="../pages/commerce-artisan.html">Commerces, artisans et TPE</a>
+    </div>
+    <div class="footer-col">
+      <span class="footer-head">Particuliers</span>
+      <a href="../pages/reparation-ordinateur.html">Réparation d'ordinateur</a>
+      <a href="../pages/recuperation-donnees.html">Récupération de données</a>
+      <a href="../pages/presence-web.html">Création de site personnel</a>
+    </div>
+    <div class="footer-col">
+      <span class="footer-head">CyberSlash</span>
+      <a href="../pages/tarifs.html">Tarifs</a>
+      <a href="../pages/faq.html">Questions fréquentes</a>
+      <a href="../pages/qui-suis-je.html">À propos</a>
+      <a href="../pages/mentions-legales.html">Mentions légales</a>
+    </div>
+  </div>
   <div class="wrap footer-row">
-    <span>© 2026 CyberSlash - Killian Rio EI · SIRET 10092052900011</span>
-    <div class="footer-links"><a href="mentions-legales.html">Mentions légales</a><a href="../index.html#contact">Contact</a></div>
+    <span>&copy; 2026 CyberSlash, Killian Rio EI &middot; SIRET 10092052900011</span>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/killian-rio-65b879388/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://g.page/r/CUMfcwvSYK27EBM" target="_blank" rel="noopener">Google Business</a>
+    </div>
   </div>
 </footer>
+
 <script src="../assets/main.js"></script>
 </body>
 </html>

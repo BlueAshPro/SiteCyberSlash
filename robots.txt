@@ -1,4 +1,78 @@
+# cyberslash.fr
+# Tout le site est ouvert a l'indexation, y compris aux moteurs de reponse
+# et aux assistants IA : la visibilite dans ces outils passe d'abord par
+# l'autorisation explicite de leurs robots.
+
 User-agent: *
+Allow: /
+
+# Moteurs de recherche classiques
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Qwantify
+Allow: /
+
+# Google : grounding des reponses Gemini et AI Overviews
+User-agent: Google-Extended
+Allow: /
+
+# OpenAI : entrainement, recherche ChatGPT, navigation a la demande
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic : Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Autres assistants et jeux de donnees ouverts
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: CCBot
 Allow: /
 
 Sitemap: https://cyberslash.fr/sitemap.xml
